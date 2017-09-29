@@ -1,0 +1,4 @@
+exclude MANIFEST.in buildout.cfg bootstrap.py .bzrignore
+global-include *.txt *.xsl *.png
+prune _bootstrap
+prune eggs

@@ -1,0 +1,18 @@
+[Project]
+# A comma separated list of Launchpad project names to close bugs for.
+# Only bugs targeted to these projects are closed.
+name = malone,launchpad
+
+[Branch States]
+# Which revnos were last looked through for each branch? The next time
+# the script run, it will start looking at revno+1.
+db = 7753
+devel = 7845
+
+[Branch Locations]
+# Which branches should be looked through for bug fixes? The left-hand
+# column is the branch name, and will be used in the comment saying that a
+# bug was fixed (e.g. "Fixed in db r7000.").
+db = bzr+ssh://bazaar.launchpad.net/~launchpad-pqm/launchpad/db-devel
+devel = bzr+ssh://bazaar.launchpad.net/~launchpad-pqm/launchpad/devel
+

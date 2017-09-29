@@ -1,0 +1,60 @@
+..
+    This file is part of lazr.launchpadlib.
+
+    lazr.launchpadlib is free software: you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, version 3 of the License.
+
+    lazr.launchpadlib is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+    FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+    License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with lazr.launchpadlib.  If not, see <http://www.gnu.org/licenses/>.
+
+This project uses zc.buildout for development.
+
+============
+Introduction
+============
+
+These are guidelines for hacking on the lazr.launchpadlib project.  But first,
+please see the common hacking guidelines at:
+
+    https://dev.launchpad.net/HackingLazrLibraries
+
+These guidelines will tell you how to run the tests, use in-development
+versions of libraries, land your branches and get them released.
+
+
+Getting help
+------------
+
+If you find bugs in this package, you can report them here:
+
+    https://launchpad.net/launchpadlib
+
+If you want to discuss this package, join the team and mailing list here:
+
+    https://launchpad.net/~lazr-developers
+
+or send a message to:
+
+    lazr-developers@lists.launchpad.net
+
+
+========
+Building
+========
+
+As mentioned above, this project uses zc.buildout, which requires a
+few steps to build some necessary files.
+
+The following two steps will create some necessary files, including a
+bin directory.
+% python bootstrap.py
+% bin/buildout
+
+Once built you can run all of the tests with:
+% bin/test

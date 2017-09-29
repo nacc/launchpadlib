@@ -1,0 +1,43 @@
+[Branch]
+# The location of the branch that should be scanned for commits. It's
+# best to keep a mirror locally, and point to the local mirror. Going
+# through each commit on a remote branch might take quite a while.
+location=bzr+ssh://bazaar.launchpad.net/~launchpad-pqm/launchpad/devel
+# The revision number where we should start scanning for commits. This
+# should be the revision where release-critical is turned off.
+start_revno=7677
+
+[Milestone]
+# The name of the current milestone.
+name=2.2.2
+# The project where bugs should be search in.
+project=launchpad-project
+# The day the milestone starts.
+start=2009-02-02
+# The day the milestone ends.
+end=2009-02-25
+# The day PQM gets set to release-critical mode.
+release-critical=2009-02-20
+# The name of the template for the progress wiki page.
+template=update-milestone.template.sample
+# The base URL where the wiki page live. The page URL will be this URL
+# plus the milestone name appended to it. This should be an editmoin
+# shortcut URL.
+base_wiki_location=dev.launchpad.net/VersionThreeDotO/Project/Progress
+# The page where the story definitions are. The story titles on the
+# progress page will link to this URL, together with an anchor, which is
+# the story tag name with the 'story-' part removed.
+stories_page=https://dev.launchpad.net/VersionThreeDotO/Project/StoryCards
+
+[Stories]
+# The list of stories that are scheduled for this milestone.
+# story_tag_name=story_name_for_display
+story-hwdb-affected-users=HWDB Affected Users
+story-hwdb-dmi-lspci=Include DMI and lspci information in HWDB submissions
+story-hwdb-filter-by-device-and-system=Find out which computers have a certain device
+story-link-to-upstream-filebug=Link to file bugs upstream
+story-link-to-upstream-searchbugs=Link to search bugs upstream
+story-set-remote-product-manually=Enable search and filebug links for a project manually
+story-set-remote-product-automatically=Enable search and filebug links for a project automatically
+story-inline-edit-bug-summary-description=Inline editing of bug description and summary
+story-hwdb-users-using-driver=Get number of users using a driver
