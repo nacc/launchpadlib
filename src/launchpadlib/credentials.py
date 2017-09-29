@@ -380,7 +380,7 @@ class KeyringCredentialStore(CredentialStore):
         # this problem by base 64 encoding the serialized value.
         serialized = self.B64MARKER + b64encode(serialized)
         keyring.set_password(
-            'launchpadlib', unique_key, serialized)
+            'launchpadlib', unique_key, serialized.decode('utf8'))
 
     def do_load(self, unique_key):
         """Retrieve credentials from the keyring."""
